@@ -10,18 +10,20 @@ int main()
 {
     int x, output;
     scanf("%d", &x);
-    if(x >= 1 && x <= 19)
+    for(int i = 1; i <= 1000; i++)
     {
-        printf("%d\n", from_1_to_19(x));
+        if(x >= 1 && x <= 19)
+        {   x = from_1_to_19(x);
+            printf("%d\n", from_1_to_19(x));
+        }
+        else if(x >= 20 && x <= 100)
+        {
+            x = from_20_to_99(x);
+            printf("%d\n", from_20_to_99(x));
+        }
+        printf("%d\n",i);
     }
-    else if(x >= 20 && x <= 99)
-    {
-        printf("%d\n", from_20_to_99(x));
-    }
-    else
-    {
-        printf("%d\n", 11);
-    }
+    
 
     return 0;
 }
@@ -96,6 +98,10 @@ int from_20_to_99(int x)
         {
             return 7+1+from_1_to_19(y);
         }
+    }
+    else
+    {
+        return 11;
     }
 
 }
