@@ -8,9 +8,6 @@ Memory: -
 Submission: 9/25/24, 11:21:40 PM
 */
 
-
-
-
 #include <stdio.h>
 
 int main()
